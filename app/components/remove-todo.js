@@ -4,6 +4,8 @@ export default Ember.Component.extend({
   actions: {
     remove(){
       const text = this.get('text');
+      this.attrs.onRemove(text);
+      
     }
   }
 });

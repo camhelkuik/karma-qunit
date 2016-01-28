@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       this.get('todos').pushObject({ text: text});
     },
     removeTodo(text){
-      this.get('todos').destoryRecord(text);
+      this.get('todos').removeObject({ text: text});
     }
   }
 });
