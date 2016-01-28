@@ -4,7 +4,7 @@
 
 <ul>
   {{#each todos as |todo|}}
-    <li>{{todo.text}}</li> {{remove-todo onRemove=(action 'removeTodo')}}
+    <li>{{todo.text}}</li> {{remove-todo onRemove=(action 'removeTodo')}} {{edit-todo onEdit=(action 'editTodo')}}
     {{/each}}
   </ul>
   

@@ -7,6 +7,9 @@ export default Ember.Component.extend({
     },
     removeTodo(text){
       this.get('todos').removeObject({ text: text});
+    },
+    editTodo(text){
+      this.get('todos').pushObject({ text: text});
     }
   }
 });
