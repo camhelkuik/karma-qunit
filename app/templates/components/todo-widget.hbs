@@ -1,5 +1,7 @@
 {{yield}}
 
+{{add-todo onAdd=(action 'addTodo')}}
+
 <ul>
   {{#each todos as |todo|}}
     <li>{{todo.text}}</li>
